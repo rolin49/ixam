@@ -26,7 +26,9 @@ class ViewControllerTest: UIViewController {
         let index: Int = Int(arc4random_uniform(26))
         let letter: String = letters[index]
         letterLabel.text = letter
-        letterLabel.font = UIFont(name: "Courier Bold", size: 100)
+//        letterLabel.font = UIFont(name: "Courier Bold", size: 100.0)
+        letterLabel.font = letterLabel.font.withSize(15.2)
+
     }
 
     override func didReceiveMemoryWarning() {

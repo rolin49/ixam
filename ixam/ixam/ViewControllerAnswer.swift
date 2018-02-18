@@ -23,6 +23,8 @@ class ViewControllerAnswer: UIViewController {
         super.viewDidLoad()
         
         let index: Int = Int(arc4random_uniform(4))
+        let index1: Int = Int(arc4random_uniform(4))
+        let index2: Int = Int(arc4random_uniform(4))
         
         // Do any additional setup after loading the view.
         switch index {
@@ -30,36 +32,36 @@ class ViewControllerAnswer: UIViewController {
             answerButton1.setTitle(correctAnswer, for: UIControlState.normal)
             var letter: String = letters[index]
             answerButton2.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index]
+            letter = letters[index1]
             answerButton3.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index]
+            letter = letters[index2]
             answerButton4.setTitle(letter, for: UIControlState.normal)
             break
         case 1:
             answerButton2.setTitle(correctAnswer, for: UIControlState.normal)
             var letter = letters[index]
             answerButton1.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index]
+            letter = letters[index1]
             answerButton3.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index]
+            letter = letters[index2]
             answerButton4.setTitle(letter, for: UIControlState.normal)
             break
         case 2:
             answerButton3.setTitle(correctAnswer, for: UIControlState.normal)
             var letter: String = letters[index]
             answerButton1.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index]
+            letter = letters[index1]
             answerButton2.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index]
+            letter = letters[index2]
             answerButton4.setTitle(letter, for: UIControlState.normal)
             break
         case 3:
             answerButton4.setTitle(correctAnswer, for: UIControlState.normal)
             var letter: String = letters[index]
             answerButton1.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index]
+            letter = letters[index1]
             answerButton2.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index]
+            letter = letters[index2]
             answerButton3.setTitle(letter, for: UIControlState.normal)
             break
         default: break
