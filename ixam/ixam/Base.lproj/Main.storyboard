@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,34 +21,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UN-I9-2jC">
-                                <rect key="frame" x="62" y="349" width="250" height="113"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UN-I9-2jC">
+                                <rect key="frame" x="62" y="330" width="250" height="128.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Begin"/>
                                 <connections>
                                     <segue destination="XL5-We-8SF" kind="show" id="var-5l-y3I"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S    GHT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SJ-hD-RYY">
-                                <rect key="frame" x="85" y="192" width="193" height="79"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="79" id="2ec-h0-KGN"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="S    GHT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SJ-hD-RYY">
+                                <rect key="frame" x="91" y="158" width="193" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="53"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="3UN-I9-2jC" firstAttribute="top" secondItem="7SJ-hD-RYY" secondAttribute="bottom" constant="78" id="3dY-N2-gSV"/>
-                            <constraint firstItem="7SJ-hD-RYY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="Bq6-nB-jCW"/>
-                            <constraint firstItem="3UN-I9-2jC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nbn-22-ScT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7SJ-hD-RYY" secondAttribute="trailing" constant="81" id="QGk-Xu-Cy7"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3UN-I9-2jC" secondAttribute="bottom" constant="205" id="dGg-2v-meq"/>
-                            <constraint firstItem="3UN-I9-2jC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="f3k-Cs-MXR"/>
-                            <constraint firstItem="7SJ-hD-RYY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="172" id="iNQ-Y7-lhs"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,7 +77,7 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="32"/>
                                 <state key="normal" title="Got it?"/>
                                 <connections>
-                                    <segue destination="w14-d7-fAI" kind="presentation" id="48A-ug-eSN"/>
+                                    <segue destination="w14-d7-fAI" kind="show" identifier="presentLetter" id="48A-ug-eSN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -186,6 +175,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answerButton1" destination="fnz-lA-CZE" id="ynE-1d-gDr"/>
+                        <outlet property="answerButton2" destination="NqA-Bj-Gbe" id="XYI-e0-S6D"/>
+                        <outlet property="answerButton3" destination="CIa-sL-PZZ" id="WMQ-JY-hbv"/>
+                        <outlet property="answerButton4" destination="UO3-CC-y5B" id="i4C-aX-Acg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpm-PH-D06" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,6 +224,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="N0p-TN-eaG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8d-4m-Dbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

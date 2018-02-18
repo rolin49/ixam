@@ -11,14 +11,22 @@ import UIKit
 class ViewControllerTest: UIViewController {
     
     @IBOutlet weak var letterLabel: UILabel!
-    var letters: String = "abcdefghijklmnopqrstuvwxyz"
+    
+    let letters: [String] = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    
+    let fontSizes: [Double] = [15.2, 13.0, 10.8, 8.7, 6.5, 4.3, 3.3, 2.1]
+    let scores: [String] = ["20/200", "20/100", "20/70", "20/50", "20/40", "20/30", "20/25", "20/20"]
+    var level: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
-        _: Int = Int(arc4random_uniform(26))
+        let index: Int = Int(arc4random_uniform(26))
+        let letter: String = letters[index]
+        letterLabel.text = letter
+        letterLabel.font = UIFont(name: "Courier Bold", size: 100)
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,14 +35,16 @@ class ViewControllerTest: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if (segue.identifier == "presentLetter") {
+            let destinationVC = segue.destination as! ViewControllerAnswer
+            destinationVC.correctAnswer = letterLabel.text!
+        }
     }
-    */
-
 }
