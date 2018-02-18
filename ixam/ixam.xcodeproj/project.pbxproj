@@ -14,6 +14,10 @@
 		4302B7762038F14700545F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4302B7742038F14700545F75 /* LaunchScreen.storyboard */; };
 		4302B7812038F14700545F75 /* ixamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302B7802038F14700545F75 /* ixamTests.swift */; };
 		4302B78C2038F14700545F75 /* ixamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302B78B2038F14700545F75 /* ixamUITests.swift */; };
+		4302B79A20390D0F00545F75 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302B79920390D0F00545F75 /* ViewControllerB.swift */; };
+		4302B79C2039129800545F75 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302B79B2039129800545F75 /* ViewControllerTest.swift */; };
+		4302B79E2039147E00545F75 /* ViewControllerAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302B79D2039147E00545F75 /* ViewControllerAnswer.swift */; };
+		4302B7A020391DCB00545F75 /* ViewControllerScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4302B79F20391DCB00545F75 /* ViewControllerScore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		4302B7872038F14700545F75 /* ixamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ixamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4302B78B2038F14700545F75 /* ixamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ixamUITests.swift; sourceTree = "<group>"; };
 		4302B78D2038F14700545F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4302B79920390D0F00545F75 /* ViewControllerB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		4302B79B2039129800545F75 /* ViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		4302B79D2039147E00545F75 /* ViewControllerAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerAnswer.swift; sourceTree = "<group>"; };
+		4302B79F20391DCB00545F75 /* ViewControllerScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerScore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +107,11 @@
 			children = (
 				4302B76B2038F14700545F75 /* AppDelegate.swift */,
 				4302B76D2038F14700545F75 /* ViewController.swift */,
+				4302B79920390D0F00545F75 /* ViewControllerB.swift */,
 				4302B76F2038F14700545F75 /* Main.storyboard */,
+				4302B79F20391DCB00545F75 /* ViewControllerScore.swift */,
+				4302B79D2039147E00545F75 /* ViewControllerAnswer.swift */,
+				4302B79B2039129800545F75 /* ViewControllerTest.swift */,
 				4302B7722038F14700545F75 /* Assets.xcassets */,
 				4302B7742038F14700545F75 /* LaunchScreen.storyboard */,
 				4302B7772038F14700545F75 /* Info.plist */,
@@ -259,7 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4302B79A20390D0F00545F75 /* ViewControllerB.swift in Sources */,
+				4302B79E2039147E00545F75 /* ViewControllerAnswer.swift in Sources */,
 				4302B76E2038F14700545F75 /* ViewController.swift in Sources */,
+				4302B7A020391DCB00545F75 /* ViewControllerScore.swift in Sources */,
+				4302B79C2039129800545F75 /* ViewControllerTest.swift in Sources */,
 				4302B76C2038F14700545F75 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
