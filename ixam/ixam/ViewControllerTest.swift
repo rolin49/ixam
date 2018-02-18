@@ -12,7 +12,7 @@ class ViewControllerTest: UIViewController {
     
     @IBOutlet weak var letterLabel: UILabel!
     
-    let letters: [String] = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    let letters: [String] = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     
     let fontSizes: [Double] = [15.2, 13.0, 10.8, 8.7, 6.5, 4.3, 3.3, 2.1]
     let scores: [String] = ["20/200", "20/100", "20/70", "20/50", "20/40", "20/30", "20/25", "20/20"]
@@ -26,8 +26,8 @@ class ViewControllerTest: UIViewController {
         let index: Int = Int(arc4random_uniform(26))
         let letter: String = letters[index]
         letterLabel.text = letter
-//        letterLabel.font = UIFont(name: "Courier Bold", size: 100.0)
-        letterLabel.font = letterLabel.font.withSize(15.2)
+        // letterLabel.font = UIFont(name: "Courier-Bold", size: 100.0)
+        letterLabel.font = letterLabel.font.withSize(100)
 
     }
 
