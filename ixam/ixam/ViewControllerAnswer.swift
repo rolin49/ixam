@@ -14,9 +14,6 @@ class ViewControllerAnswer: UIViewController {
     @IBOutlet weak var answerButton2: UIButton!
     @IBOutlet weak var answerButton3: UIButton!
     @IBOutlet weak var answerButton4: UIButton!
-    var correctAnswer: String = ""
-    var index: Int = Int(arc4random_uniform(26))
-    let letters: [String] = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     
     
     override func viewDidLoad() {
@@ -29,39 +26,39 @@ class ViewControllerAnswer: UIViewController {
         // Do any additional setup after loading the view.
         switch index {
         case 0:
-            answerButton1.setTitle(correctAnswer, for: UIControlState.normal)
-            var letter: String = letters[index]
+            answerButton1.setTitle(allLetters.correctAnswer, for: UIControlState.normal)
+            var letter: String = allLetters.LettersList[index]
             answerButton2.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index1]
+            letter = allLetters.LettersList[index1]
             answerButton3.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index2]
+            letter = allLetters.LettersList[index2]
             answerButton4.setTitle(letter, for: UIControlState.normal)
             break
         case 1:
-            answerButton2.setTitle(correctAnswer, for: UIControlState.normal)
-            var letter = letters[index]
+            answerButton2.setTitle(allLetters.correctAnswer, for: UIControlState.normal)
+            var letter = allLetters.LettersList[index]
             answerButton1.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index1]
+            letter = allLetters.LettersList[index1]
             answerButton3.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index2]
+            letter = allLetters.LettersList[index2]
             answerButton4.setTitle(letter, for: UIControlState.normal)
             break
         case 2:
-            answerButton3.setTitle(correctAnswer, for: UIControlState.normal)
-            var letter: String = letters[index]
+            answerButton3.setTitle(allLetters.correctAnswer, for: UIControlState.normal)
+            var letter: String = allLetters.LettersList[index]
             answerButton1.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index1]
+            letter = allLetters.LettersList[index1]
             answerButton2.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index2]
+            letter = allLetters.LettersList[index2]
             answerButton4.setTitle(letter, for: UIControlState.normal)
             break
         case 3:
-            answerButton4.setTitle(correctAnswer, for: UIControlState.normal)
-            var letter: String = letters[index]
+            answerButton4.setTitle(allLetters.correctAnswer, for: UIControlState.normal)
+            var letter: String = allLetters.LettersList[index]
             answerButton1.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index1]
+            letter = allLetters.LettersList[index1]
             answerButton2.setTitle(letter, for: UIControlState.normal)
-            letter = letters[index2]
+            letter = allLetters.LettersList[index2]
             answerButton3.setTitle(letter, for: UIControlState.normal)
             break
         default: break
